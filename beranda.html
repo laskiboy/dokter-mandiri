@@ -17,6 +17,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
         }
 
         .active {
@@ -114,6 +115,59 @@
             }
         }
 
+        .feature-container {
+            min-height: 100vh;
+        }
+
+        .feature-list-column {
+            padding: 20px;
+        }
+
+        .feature-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* border: 1px solid #e9ecef; */
+            height: 90vh;
+        }
+
+        .feature-item:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-3px);
+        }
+
+        .feature-image-column {
+            position: relative;
+        }
+
+        .feature-image {
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .feature-image img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            transition: opacity 0.5s ease;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        h3 {
+            color: #000;
+            margin-bottom: 10px;
+        }
+
         @media (max-width: 500px) {
             .navbar-brand {
                 font-size: 1.25rem !important;
@@ -153,21 +207,22 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link" href="#">Produk</a>
+                        <a class="nav-link" href="fitur.html">Fitur</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link" href="#">Tentang Kami</a>
+                        <a class="nav-link" href="tentang.html">Tentang Kami</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link" href="#">Kontak Kami</a>
+                        <a class="nav-link" href="kontak.html">Kontak Kami</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link" href="#">Harga</a>
+                        <a class="nav-link" href="harga.html">Harga</a>
                     </li>
                 </ul>
-                <button style="background-color: #57cc99;"
+                <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
                     class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
+                <!-- <a class="nav-link ms-3" href="#">Daftar</a> -->
             </div>
         </div>
     </nav>
@@ -200,7 +255,7 @@
                     src="img/Teknologi-Kesehatan-Digital-Revolusi-dalam-Pelayanan-Medis.jpg"
                     alt="Ilustrasi sistem kesehatan" class="img-fluid">
             </div>
-            <div class="w-100">
+            <div class="w-100 d-flex justify-content-center align-items-center flex-column">
                 <h1 class="fw-semibold text-center mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">Sistem
                     Informasi
                     Kesehatan yang Terintegrasi</h1>
@@ -209,16 +264,241 @@
                     Ciptakan efisiensi, minimalkan kesalahan administrasi, dan tingkatkan pengalaman pasien
                     dengan satu solusi digital yang komprehensif.
                 </p>
-                <!-- <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="me-5 btn btn-primary btn-lg">Dapatkan Demo Gratis</a>
-                    <a href="#" class="btn btn-outline-primary btn-lg">Pelajari Lebih Lanjut</a>
-                </div> -->
+                <button
+                    class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    style="background-color: #57cc99; width: 200px; height: 45px;">Coba Sekarang<i
+                        class='bx bx-right-arrow-alt ms-3'></i></button>
             </div>
         </div>
     </div>
+    <div class="container-fluid mt-5">
+        <div class="row feature-container">
+            <!-- Bagian kiri: Daftar fitur yang bisa di-scroll -->
+            <div class="col-md-6 feature-list-column">
+                <div class="d-flex justify-content-center align-items-center flex-column feature-item border mb-5 px-5"
+                    data-feature="feature1" id="feature1">
+                    <i class='bx bxs-balloon w-100 mb-4' style="font-size: 4.5em; color: #57cc99;"></i>
+                    <h3 class="text-start w-100 fw-semibold mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">
+                        Fitur 1</h3>
+                    <p>Penjelasan detail tentang fitur 1. Ini adalah fitur yang sangat bermanfaat untuk pengguna. Fitur
+                        ini memungkinkan pengguna untuk melakukan hal-hal yang sebelumnya tidak bisa dilakukan.</p>
+                    <p>Dengan fitur ini, pengguna dapat meningkatkan produktivitas dan efisiensi dalam pekerjaan mereka
+                        sehari-hari.</p>
+                    <div class="w-100 mt-4">
+                        <a href="fitur.html"
+                            class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            style="background-color: #57cc99; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
+                                class='bx bx-right-arrow-alt ms-3'></i></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center flex-column feature-item border mb-5 px-5"
+                    data-feature="feature2" id="feature2">
+                    <i class='bx bxs-coffee-bean w-100 mb-4' style="font-size: 4.5em; color: #22577a;"></i>
+                    <h3 class="text-start w-100 fw-semibold mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">
+                        Fitur 2</h3>
+                    <p>Penjelasan detail tentang fitur 2. Fitur ini dirancang untuk memudahkan pengguna dalam mengelola
+                        data dan informasi penting.</p>
+                    <p>Dengan antarmuka yang intuitif, fitur ini memungkinkan pengguna untuk dengan cepat mengakses dan
+                        memanipulasi data yang mereka butuhkan.</p>
+                    <p>Penjelasan detail tentang fitur 2. Fitur ini dirancang untuk memudahkan pengguna dalam mengelola
+                        data dan informasi penting.</p>
+                    <div class="w-100 mt-4">
+                        <a href="fitur.html"
+                            class="outline btn btn-outline me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            style="border: 1px solid #22577a; width: 250px; height: 45px;">Pelajari Lebih
+                            Lanjut<i class='bx bx-right-arrow-alt ms-3'></i></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center flex-column feature-item border mb-5 px-5"
+                    data-feature="feature3" id="feature3">
+                    <i class='bx bxs-sushi w-100 mb-4' style="font-size: 4.5em; color: #57cc99;"></i>
+                    <h3 class="text-start w-100 fw-semibold mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">
+                        Fitur 3</h3>
+                    <p>Penjelasan detail tentang fitur 3. Fitur ini adalah yang terbaru dan paling inovatif dari produk
+                        kami.</p>
+                    <p>Menggunakan teknologi canggih, fitur ini memungkinkan pengguna untuk mengotomatisasi tugas-tugas
+                        berulang dan menghemat banyak waktu.</p>
+                    <p>Dengan fitur ini, pengguna dapat fokus pada hal-hal yang lebih penting dan strategis dalam bisnis
+                        mereka.</p>
+                    <div class="w-100 mt-4">
+                        <a href="fitur.html"
+                            class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            style="background-color: #57cc99; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
+                                class='bx bx-right-arrow-alt ms-3'></i></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center flex-column feature-item border mb-5 px-5"
+                    data-feature="feature4" id="feature4">
+                    <i class='bx bxs-shower w-100 mb-4' style="font-size: 4.5em; color: #22577a;"></i>
+                    <h3 class="text-start w-100 fw-semibold mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">
+                        Fitur 4</h3>
+                    <p>Penjelasan detail tentang fitur 4. Fitur ini didesain untuk meningkatkan kolaborasi antar tim dan
+                        departemen.</p>
+                    <p>Dengan kemampuan berbagi real-time, fitur ini memastikan bahwa semua anggota tim selalu memiliki
+                        akses ke informasi terbaru.</p>
+                    <p>Fitur ini sangat cocok untuk organisasi dengan tim yang tersebar di berbagai lokasi geografis.
+                    </p>
+                    <div class="w-100 mt-4">
+                        <a href="fitur.html"
+                            class="outline btn btn-outline me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            style="border: 1px solid #22577a; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
+                                class='bx bx-right-arrow-alt ms-3'></i></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center flex-column feature-item border mb-5 px-5"
+                    data-feature="feature5" id="feature5">
+                    <i class='bx bxs-pear w-100 mb-4' style="font-size: 4.5em; color: #57cc99;"></i>
+                    <h3 class="text-start w-100 fw-semibold mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">
+                        Fitur 5</h3>
+                    <p>Penjelasan detail tentang fitur 5. Fitur ini adalah yang paling banyak diminta oleh pengguna
+                        kami.</p>
+                    <p>Dengan antarmuka yang disesuaikan dan opsi yang dapat dikonfigurasi, fitur ini dapat disesuaikan
+                        dengan kebutuhan khusus setiap pengguna.</p>
+                    <p>Fitur ini adalah bukti komitmen kami untuk terus berinovasi dan memberikan nilai tambah kepada
+                        pengguna kami.</p>
+                    <div class="w-100 mt-4">
+                        <a href="fitur.html"
+                            class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            style="background-color: #57cc99; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
+                                class='bx bx-right-arrow-alt ms-3'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian kanan: Gambar yang sticky/fixed -->
+            <div class="col-md-6 feature-image-column">
+                <div class="feature-image">
+                    <img id="feature1-img" src="img/adseto.PNG" alt="Fitur 1" class="img-fluid">
+                    <img id="feature2-img" src="img/asdasd.PNG" alt="Fitur 2" class="img-fluid hidden">
+                    <img id="feature3-img" src="img/adseto.PNG" alt="Fitur 3" class="img-fluid hidden">
+                    <img id="feature4-img" src="img/asdasd.PNG" alt="Fitur 4" class="img-fluid hidden">
+                    <img id="feature5-img" src="img/adseto.PNG" alt="Fitur 5" class="img-fluid hidden">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center w-100 vh-100">
+        <h1 class="fw-semibold" style="font-family: 'Montserrat';">Kontak Kami</h1>
+        <p>Hubungi kami jika blabla</p>
+        <div class="d-flex justify-content-center align-items-center w-100 mt-5">
+            <iframe class="w-50 me-5"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3934360938374!2d107.5553798!3d-6.9628289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ef236eb19e97%3A0x93da0f0cfa5d199c!2sGoldstep%20Indonesia!5e0!3m2!1sid!2sid!4v1742808523848!5m2!1sid!2sid"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="w-75">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" placeholder="Nama" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="Nomor Telepon" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <input type="email" placeholder="Email" class="form-control" id="inputAddress"
+                            placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" placeholder="Pesan" id="exampleFormControlTextarea1"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" onclick="window.location.href='buat-pw.html'"
+                            style="background-color: #57cc99; height: 45px;"
+                            class="w-100 fill text-white btn rounded-pill d-flex justify-content-center align-items-center">
+                            Kirim
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const featureItems = document.querySelectorAll('.feature-item');
+            let currentActiveFeature = 'feature1';
+
+            // Fungsi untuk mengaktifkan fitur dan mengganti gambar
+            function activateFeature(featureId) {
+                if (currentActiveFeature === featureId) return;
+
+                // Hapus kelas active dari semua item
+                // featureItems.forEach(i => i.classList.remove('active'));
+
+                // Tambahkan kelas active ke item yang sesuai
+                // const activeItem = document.querySelector(`[data-feature="${featureId}"]`);
+                // if (activeItem) activeItem.classList.add('active');
+
+                // Sembunyikan semua gambar
+                const allImages = document.querySelectorAll('.feature-image img');
+                allImages.forEach(img => img.classList.add('hidden'));
+
+                // Tampilkan gambar yang sesuai
+                const imageToShow = document.getElementById(featureId + '-img');
+                if (imageToShow) imageToShow.classList.remove('hidden');
+
+                currentActiveFeature = featureId;
+            }
+
+            // Tambahkan event listener untuk klik pada fitur
+            featureItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    const featureId = this.getAttribute('data-feature');
+                    activateFeature(featureId);
+
+                    // Scroll ke elemen ini dengan animasi
+                    this.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Deteksi fitur yang sedang dilihat saat scroll
+            window.addEventListener('scroll', function () {
+                // Gunakan throttling untuk mengurangi frekuensi pemeriksaan
+                if (!window.scrollThrottleTimeout) {
+                    window.scrollThrottleTimeout = setTimeout(function () {
+                        // Hitung pusat viewport
+                        const viewportCenter = window.innerHeight / 2;
+
+                        // Cek posisi setiap fitur relatif terhadap viewport
+                        let closestFeature = null;
+                        let closestDistance = Infinity;
+
+                        featureItems.forEach(item => {
+                            const rect = item.getBoundingClientRect();
+                            const featureCenter = rect.top + rect.height / 2;
+                            const distance = Math.abs(featureCenter - viewportCenter);
+
+                            // Temukan fitur yang paling dekat dengan pusat viewport
+                            if (distance < closestDistance) {
+                                closestDistance = distance;
+                                closestFeature = item.getAttribute('data-feature');
+                            }
+                        });
+
+                        // Aktifkan fitur terdekat jika ditemukan
+                        if (closestFeature) {
+                            activateFeature(closestFeature);
+                        }
+
+                        window.scrollThrottleTimeout = null;
+                    }, 100);
+                }
+            });
+
+            // Inisialisasi - aktifkan fitur pertama
+            activateFeature('feature1');
+        });
+    </script>
 </body>
 
 </html>
