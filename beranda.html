@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/header.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -18,51 +19,6 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
-        }
-
-        .active {
-            position: relative;
-            color: #57cc99 !important;
-            font-weight: 500;
-        }
-
-        .active::after {
-            content: "" !important;
-            position: absolute !important;
-            left: 0;
-            bottom: -4px;
-            width: 100%;
-            height: 2px;
-            background-color: #57cc99;
-            transform: scaleX(1);
-            transform-origin: left;
-            transition: transform 0.3s ease;
-        }
-
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #57cc99;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            transform: scaleX(1);
-        }
-
-        .nav-link:hover {
-            color: #57cc99 !important;
         }
 
         .custom-toggler {
@@ -77,43 +33,7 @@
             box-shadow: none;
         }
 
-        .outline:hover {
-            background-color: #22577a;
-            color: #FFF;
-        }
-
-        .fill:hover {
-            background-color: transparent !important;
-            border: 1px solid #57cc99 !important;
-            color: #57cc99 !important;
-        }
-
-        @media (max-width: 991px) {
-            .navbar-nav {
-                margin-top: 1rem;
-                width: 100%;
-                text-align: center;
-            }
-
-            .nav-item {
-                padding: 0.5rem 0;
-            }
-
-            .active::after,
-            .nav-link::after {
-                bottom: -2px;
-            }
-
-            .navbar-collapse {
-                padding-bottom: 1rem;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 200px;
-                margin: 0 auto;
-            }
-        }
+        @media (max-width: 991px) {}
 
         .feature-container {
             min-height: 100vh;
@@ -159,28 +79,41 @@
             transition: opacity 0.5s ease;
         }
 
-        .hidden {
-            display: none;
-        }
-
         h3 {
             color: #000;
             margin-bottom: 10px;
         }
 
-        @media (max-width: 500px) {
-            .navbar-brand {
-                font-size: 1.25rem !important;
-            }
+        .social-icon {
+            color: #57cc99;
+            font-size: 24px;
+            margin-right: 20px;
+        }
 
-            .mx-2 {
-                margin-left: 0.5rem !important;
-                margin-right: 0.5rem !important;
-            }
+        .footer-link {
+            color: #000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
 
-            .py-3 {
-                padding-top: 0.75rem !important;
-                padding-bottom: 0.75rem !important;
+        .footer-link:hover {
+            color: #57cc99 !important;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-icon {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 20px;
             }
         }
     </style>
@@ -373,10 +306,10 @@
             <div class="col-md-6 feature-image-column">
                 <div class="feature-image">
                     <img id="feature1-img" src="img/adseto.PNG" alt="Fitur 1" class="img-fluid">
-                    <img id="feature2-img" src="img/asdasd.PNG" alt="Fitur 2" class="img-fluid hidden">
-                    <img id="feature3-img" src="img/adseto.PNG" alt="Fitur 3" class="img-fluid hidden">
-                    <img id="feature4-img" src="img/asdasd.PNG" alt="Fitur 4" class="img-fluid hidden">
-                    <img id="feature5-img" src="img/adseto.PNG" alt="Fitur 5" class="img-fluid hidden">
+                    <img id="feature2-img" src="img/asdasd.PNG" alt="Fitur 2" class="img-fluid d-none">
+                    <img id="feature3-img" src="img/adseto.PNG" alt="Fitur 3" class="img-fluid d-none">
+                    <img id="feature4-img" src="img/asdasd.PNG" alt="Fitur 4" class="img-fluid d-none">
+                    <img id="feature5-img" src="img/adseto.PNG" alt="Fitur 5" class="img-fluid d-none">
                 </div>
             </div>
         </div>
@@ -418,7 +351,47 @@
         </div>
     </div>
 
+    <footer class="py-5 shadow" style="background-color: #f4f4f4">
+        <div class="container">
+            <div class="row">
+                <div class="col mb-4">
+                    <strong class="fs-2" style="color: #57cc99;">Dokter</strong><span class="fs-2">Mandiri</span>
+                    <p class="text-muted mt-4">
+                        <i class="bx bx-map me-2"></i>
+                        Taman Kopo Indah 3, Ruko D35Bandung
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                    <div class="contact-info mt-4">
+                        <i class="bx bxl-whatsapp contact-icon"></i>
+                        084756271823
+                    </div>
+                    <div class="contact-info">
+                        <i class="bx bx-headphone contact-icon"></i>
+                        0817283273817
+                    </div>
+                </div>
 
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-4">Produk</h5>
+                    <a href="fitur.html" class="footer-link">Fitur</a>
+                </div>
+
+                <div class="col-md-2 mb-4 ms-0">
+                    <h5 class="mb-4">Perusahaan</h5>
+                    <a href="tentang.html" class="footer-link">Tentang Kami</a>
+                    <a href="kontak.html" class="footer-link">Kontak Kami</a>
+                    <a href="tnc.html" class="footer-link">Syarat & Ketentuan</a>
+                    <a href="privasi.html" class="footer-link">Kebijakan & Privasi</a>
+                    <a href="faq.html" class="footer-link">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
