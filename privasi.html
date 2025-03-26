@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokter Mandiri: Aplikasi Fasilitas Kesehatan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .social-icon {
+            color: #57cc99;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .footer-link {
+            color: #000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-link:hover {
+            color: #57cc99 !important;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-icon {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
+        <div class="mx-2 mx-md-4 container-fluid">
+            <a class="navbar-brand fs-4" href="#">
+                <strong style="color: #57cc99;">Dokter</strong><span>Mandiri</span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="custom-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#57cc99" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="fitur.html">Fitur</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="kontak.html">Kontak Kami</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="harga.html">Harga</a>
+                    </li>
+                </ul>
+                <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                        class='me-3 bx bxs-door-open'></i>Masuk</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container w-75 p-5">
+        <p class="fs-2 fw-bold" style="color: #57cc99; margin-top: 60px">Kebijakan & Privasi</p>
+        <p class="mt-4" style="color: #ABABAB">Terakhir diperbarui pada 26 Maret 2025</p>
+        <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero cumque fugit autem voluptatem iste
+            dignissimos saepe doloremque maxime voluptas odio recusandae natus iusto, harum dolore neque accusantium
+            dolorem corrupti mollitia ad ab! Atque culpa cumque sed? Quisquam, dolorum culpa?
+        </p>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">A. Pengumpulan Informasi</p>
+        <p class="mt-4">Kami mengumpulkan beberapa jenis informasi untuk meningkatkan layanan kami,
+            termasuk:</p>
+        <ul>
+            <li style="margin-left: -10px; margin-bottom: 10px"><span class="fw-bold">Informasi yang diberikan oleh
+                    pengguna:</span> Saat mendaftar di platform kami atau menggunakan layanan kami, Anda mungkin diminta
+                untuk memberikan informasi seperti nama lengkap, alamat email, nomor telepon, dan informasi lain yang
+                relevan dengan akun Anda.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <sapn class="fw-bold">Informasi otomatis:</sapn> Saat Anda mengakses layanan kami, kami
+                secara otomatis mengumpulkan informasi teknis seperti alamat IP Anda, jenis perangkat yang digunakan,
+                sistem
+                operasi, browser, serta perilaku penggunaan layanan seperti halaman yang dikunjungi dan waktu akses.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Cookies dan teknologi pelacakan:</span> Kami menggunakan cookies dan teknologi
+                serupa
+                untuk meningkatkan pengalaman pengguna, menyimpan preferensi pengguna, dan memahami bagaimana Anda
+                berinteraksi dengan layanan kami. Anda dapat menyesuaikan preferensi cookies melalui pengaturan browser
+                Anda.
+            </li>
+        </ul>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">B. Penggunaan Informasi</p>
+        <p class="mt-4">Informasi yang kami kumpulkan digunakan untuk berbagai keperluan, termasuk namun
+            tidak terbatas pada:</p>
+        <ul>
+            <li style="margin-left: -10px; margin-bottom: 10px"><span class="fw-bold">Memproses layanan:</span> Kami
+                menggunakan informasi Anda untuk mengelola akun Anda, memberikan layanan yang Anda butuhkan, serta
+                memastikan bahwa Anda dapat menggunakan fitur-fitur yang tersedia dengan lancar.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <sapn class="fw-bold">Peningkatan pengalaman pengguna:</sapn> Kami menganalisis data untuk memahami
+                bagaimana pengguna berinteraksi dengan layanan kami guna mengembangkan fitur baru dan meningkatkan
+                performa
+                platform.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Komunikasi dan layanan pelanggan:</span> Kami menggunakan informasi Anda untuk
+                menghubungi Anda terkait layanan kami, menjawab pertanyaan, serta memberikan dukungan teknis jika
+                diperlukan.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Keamanan dan pencegahan penipuan:</span> Data pengguna digunakan untuk memastikan
+                keamanan akun, mencegah akses yang tidak sah, serta mendeteksi aktivitas mencurigakan atau pelanggaran
+                terhadap syarat dan ketentuan kami.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Promosi dan pemasaran:</span> Dengan persetujuan Anda, kami dapat mengirimkan
+                informasi terkait promosi, penawaran khusus, atau berita terbaru tentang layanan kami melalui email,
+                SMS,
+                atau notifikasi aplikasi.
+            </li>
+        </ul>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">C. Perlindungan Data</p>
+        <p class="mt-4">Kami menerapkan berbagai langkah keamanan untuk melindungi informasi pribadi
+            pengguna dari akses yang tidak sah, kehilangan, penyalahgunaan, atau kebocoran data. Beberapa langkah yang
+            kami
+            terapkan meliputi:</p>
+        <ul>
+            <li style="margin-left: -10px; margin-bottom: 10px"><span class="fw-bold">Enkripsi data:</span> Data yang
+                disimpan dan ditransmisikan dilindungi dengan teknologi enkripsi untuk mencegah akses yang tidak sah.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <sapn class="fw-bold">Akses terbatas:</sapn> Hanya pihak yang memiliki otorisasi yang dapat mengakses
+                informasi pribadi pengguna, dan mereka terikat oleh kebijakan privasi serta kewajiban hukum yang ketat.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Pemantauan keamanan:</span> Kami secara rutin melakukan pemantauan terhadap sistem
+                kami untuk mendeteksi dan menangani potensi ancaman keamanan.
+            </li>
+        </ul>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">D. Berbagi Informasi dengan Pihak Ketiga</p>
+        <p class="mt-4">Kami tidak menjual atau menyewakan informasi pribadi Anda kepada pihak ketiga.
+            Namun, dalam kondisi tertentu, data dapat dibagikan dengan:</p>
+        <ul>
+            <li style="margin-left: -10px; margin-bottom: 10px"><span class="fw-bold">Mitra atau penyedia layanan pihak
+                    ketiga:</span> Kami dapat berbagi data dengan pihak ketiga yang bekerja sama dengan kami dalam
+                menyediakan layanan, seperti pemrosesan pembayaran, hosting website, analitik, dan layanan pelanggan.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <sapn class="fw-bold">Kepatuhan hukum:</sapn> Jika diwajibkan oleh hukum atau perintah pengadilan, kami
+                dapat mengungkapkan informasi Anda kepada otoritas terkait.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Perlindungan hak-hak kami:</span> Kami dapat membagikan informasi jika diperlukan
+                untuk melindungi hak, properti, atau keselamatan Dokter Mandiri, pengguna kami, atau pihak lain.
+            </li>
+        </ul>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">E. Hak Pengguna</p>
+        <p class="mt-4">Sebagai pengguna, Anda memiliki hak berikut terkait informasi pribadi Anda:</p>
+        <ul>
+            <li style="margin-left: -10px; margin-bottom: 10px"><span class="fw-bold">Hak akses:</span> Anda dapat
+                meminta
+                salinan data pribadi yang kami simpan tentang Anda.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <sapn class="fw-bold">Hak perbaikan:</sapn> Jika Anda merasa bahwa informasi yang kami miliki tidak
+                akurat
+                atau tidak lengkap, Anda berhak untuk memperbaikinya.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Hak penghapusan:</span> Dalam kondisi tertentu, Anda dapat meminta kami untuk
+                menghapus data pribadi Anda dari sistem kami.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Hak keberatan dan pembatasan pemrosesan:</span> Anda dapat membatasi atau menolak
+                pemrosesan data pribadi Anda dalam kondisi tertentu.
+            </li>
+            <li style="margin-left: -10px; margin-bottom: 10px">
+                <span class="fw-bold">Hak portabilitas data:</span> Anda dapat meminta kami untuk mentransfer data
+                pribadi
+                Anda ke pihak lain dalam format yang dapat dibaca secara elektronik.
+            </li>
+        </ul>
+        <p class="mt-4">Jika Anda ingin menggunakan hak-hak ini, silakan hubungi kami melalui email yang
+            tertera di bawah.</p>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">F. Penyimpanan Data</p>
+        <p class="mt-4">Kami hanya menyimpan informasi pribadi Anda selama diperlukan untuk tujuan yang
+            dijelaskan dalam Kebijakan Privasi ini, atau sesuai dengan persyaratan hukum yang berlaku. Jika Anda meminta
+            penghapusan akun, kami akan menghapus atau menganonimkan data pribadi Anda, kecuali jika diperlukan untuk
+            kepentingan hukum.</p>
+        <p class="mt-5 fw-bold fs-5" style="color: #22577a">G. Perubahan Kebijakan Privasi</p>
+        <p class="mt-4">Kebijakan Privasi ini dapat diperbarui dari waktu ke waktu untuk mencerminkan
+            perubahan
+            dalam layanan kami atau peraturan yang berlaku. Jika ada perubahan signifikan, kami akan memberi tahu
+            pengguna
+            melalui email atau pemberitahuan di platform kami. Kami menyarankan agar pengguna secara berkala meninjau
+            kebijakan
+            ini untuk tetap mendapatkan informasi terbaru.</p>
+        <p class="mt-4">Jika Anda memiliki pertanyaan atau permintaan terkait Kebijakan Privasi ini, silakan hubungi
+            kami
+            <a href="{{ url('/kontak') }}">Kontak Dokter Mandiri</a>
+        </p>
+    </div>
+
+    <footer class=" py-5 shadow" style="background-color: #f4f4f4">
+        <div class="container">
+            <div class="row">
+                <div class="col mb-4">
+                    <strong class="fs-2" style="color: #57cc99;">Dokter</strong><span class="fs-2">Mandiri</span>
+                    <p class="text-muted mt-4">
+                        <i class="bx bx-map me-2"></i>
+                        Taman Kopo Indah 3, Ruko D35Bandung
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                    <div class="contact-info mt-4">
+                        <i class="bx bxl-whatsapp contact-icon"></i>
+                        084756271823
+                    </div>
+                    <div class="contact-info">
+                        <i class="bx bx-headphone contact-icon"></i>
+                        0817283273817
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-4">Produk</h5>
+                    <a href="fitur.html" class="footer-link">Fitur</a>
+                </div>
+
+                <div class="col-md-2 mb-4 ms-0">
+                    <h5 class="mb-4">Perusahaan</h5>
+                    <a href="tentang.html" class="footer-link">Tentang Kami</a>
+                    <a href="kontak.html" class="footer-link">Kontak Kami</a>
+                    <a href="tnc.html" class="footer-link">Syarat & Ketentuan</a>
+                    <a href="privasi.html" class="footer-link">Kebijakan & Privasi</a>
+                    <a href="faq.html" class="footer-link">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
