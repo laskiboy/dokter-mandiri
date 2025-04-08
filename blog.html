@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokter Mandiri: Aplikasi Fasilitas Kesehatan</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .custom-toggler {
+            border: none;
+            background: transparent;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .custom-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        @media (max-width: 991px) {}
+
+        .feature-container {
+            min-height: 100vh;
+        }
+
+        .feature-list-column {
+            padding: 20px;
+        }
+
+        .feature-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* border: 1px solid #e9ecef; */
+            height: 90vh;
+        }
+
+        .feature-item:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-3px);
+        }
+
+        .feature-image-column {
+            position: relative;
+        }
+
+        .feature-image {
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .feature-image img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            transition: opacity 0.5s ease;
+        }
+
+        h3 {
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .social-icon {
+            color: #57cc99;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .footer-link {
+            color: #000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-link:hover {
+            color: #57cc99 !important;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-icon {
+            margin-right: 10px;
+        }
+
+        .images {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .images:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 20px;
+            }
+        }
+
+        .outline-green {
+            background-color: transparent !important;
+            border: 2px solid #57cc99;
+            color: #57cc99;
+        }
+
+        .outline-green:hover {
+            background-color: #57cc99 !important;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
+        <div class="mx-2 mx-md-4 container-fluid">
+            <a class="navbar-brand fs-4" href="beranda.html">
+                <strong style="color: #57cc99;">Dokter</strong><span>Mandiri</span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="custom-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#57cc99" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="fitur.html">Fitur</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="kontak.html">Kontak Kami</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link" href="harga.html">Harga</a>
+                    </li>
+                </ul>
+                <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                        class='me-3 bx bxs-door-open'></i>Masuk</button>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-end align-items-end">
+        <input type="text" placeholder="Cari" class="form-control w-25"
+            style="margin-top: 120px; margin-right: 50px; z-index: 999;">
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+        <div class="container mt-5 mb-4">
+            <div class="card rounded-4 d-flex justify-content-center align-items-center flex-row">
+                <div class="w-50 h-100 p-5 bg-dark rounded-4">
+                    <p class="border text-center rounded-pill"
+                        style="width: 15%; border-color: #57cc99 !important; color: #57cc99;">Lorem</p>
+                    <h1 class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, itaque?</h1>
+                    <a type="button" style="width: 40%; background-color: #57cc99;"
+                        class="btn fill text-white mt-4 d-flex justify-content-center align-items-center">Baca
+                        Sekarang<i class='bx bx-right-arrow-alt ms-2'></i></a>
+                </div>
+                <div class="w-50 h-100">
+                    <img src="img/vans-3-logo.png" class="w-100" height="390">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex mt-5 mb-4 justify-content-between align-items-center">
+                <h1 class="fw-semibold" style="font-family: 'Montserrat';">Berita Terbaru</h1>
+                <a href="#" style="border-bottom: 2px solid rgb(184, 184, 184);"
+                    class="text-decoration-none text-black d-flex justify-content-center align-items-center">Lihat
+                    Selengkapnya <i class='bx bx-right-arrow-alt fs-5 ms-1'></i></a>
+            </div>
+            <div class="row">
+                <div class="col-md-4" onclick="window.location.href='detail-blog.html'">
+                    <div class="card position-relative images overflow-hidden rounded-4">
+                        <img src="img/berita1.png" class="card-img-top" alt="...">
+
+                        <div class="position-absolute bottom-0 start-0 w-100 h-50"
+                            style="background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);">
+                        </div>
+
+                        <div class="position-absolute bottom-0 p-4 mb-4 text-white">
+                            <h1>Judul Berita</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, fuga laborum. Quam neque
+                                alias ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" onclick="window.location.href='detail-blog.html'">
+                    <div class="card position-relative images overflow-hidden rounded-4">
+                        <img src="img/berita2.png" class="card-img-top" alt="...">
+
+                        <div class="position-absolute bottom-0 start-0 w-100 h-50"
+                            style="background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);">
+                        </div>
+
+                        <div class="position-absolute bottom-0 p-4 mb-4 text-white">
+                            <h1>Judul Berita</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, fuga laborum. Quam neque
+                                alias ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" onclick="window.location.href='detail-blog.html'">
+                    <div class="card position-relative images overflow-hidden rounded-4">
+                        <img src="img/berita3.png" class="card-img-top" alt="...">
+
+                        <div class="position-absolute bottom-0 start-0 w-100 h-50"
+                            style="background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);">
+                        </div>
+
+                        <div class="position-absolute bottom-0 p-4 mb-4 text-white">
+                            <h1>Judul Berita</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, fuga laborum. Quam neque
+                                alias ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="d-flex mt-5 mb-4 justify-content-between align-items-center text-start">
+                <h1 class="fw-semibold" style="font-family: 'Montserrat';">Maintenence Pada Dokter Mandiri</h1>
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="w-50 d-flex justify-content-center align-items-center" style="height: 400px;">
+                                <img src="img/hn.jpg" class="w-100 h-100 rounded-4" alt="">
+                            </div>
+                            <div class="w-50 d-flex justify-content-center align-items-start px-5 flex-column"
+                                style="height: 400px;">
+                                <h3 class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Distinctio,
+                                </h3>
+                                <p class="text-black fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis
+                                    voluptatem
+                                    veniam dignissimos alias vero fugit in tempore sunt dicta
+                                    <a href="#" class="text-decoration-none text-black">...</a>
+                                </p>
+                                <a type="button" style="width: 40%; background-color: #57cc99;"
+                                    class="btn fill text-white mb-5 d-flex justify-content-center align-items-center">
+                                    Baca Selengkapnya<i class='bx bx-right-arrow-alt ms-2'></i>
+                                </a>
+                                <p class="text-secondary">08 April 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="w-50 d-flex justify-content-center align-items-center" style="height: 400px;">
+                                <img src="img/mobile-app-developer-1.png" style="object-fit: cover;"
+                                    class="w-100 h-100 rounded-4" alt="">
+                            </div>
+                            <div class="w-50 d-flex justify-content-center align-items-start px-5 flex-column"
+                                style="height: 400px;">
+                                <h3 class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Distinctio,
+                                </h3>
+                                <p class="text-black fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis
+                                    voluptatem
+                                    veniam dignissimos alias vero fugit in tempore sunt dicta
+                                    <a href="#" class="text-decoration-none text-black">...</a>
+                                </p>
+                                <a type="button" style="width: 40%; background-color: #57cc99;"
+                                    class="btn fill text-white mb-5 d-flex justify-content-center align-items-center">
+                                    Baca Selengkapnya<i class='bx bx-right-arrow-alt ms-2'></i>
+                                </a>
+                                <p class="text-secondary">08 April 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="w-50 d-flex justify-content-center align-items-center" style="height: 400px;">
+                                <img src="img/Banner-3.jpg" class="w-100 h-100 rounded-4" alt="">
+                            </div>
+                            <div class="w-50 d-flex justify-content-center align-items-start px-5 flex-column"
+                                style="height: 400px;">
+                                <h3 class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Distinctio,
+                                </h3>
+                                <p class="text-black fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta perferendis
+                                    voluptatem
+                                    veniam dignissimos alias vero fugit in tempore sunt dicta
+                                    <a href="#" class="text-decoration-none text-black">...</a>
+                                </p>
+                                <a type="button" style="width: 40%; background-color: #57cc99;"
+                                    class="btn fill text-white mb-5 d-flex justify-content-center align-items-center">
+                                    Baca Selengkapnya<i class='bx bx-right-arrow-alt ms-2'></i>
+                                </a>
+                                <p class="text-secondary">08 April 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex mt-5 mb-4 justify-content-between align-items-center text-start">
+                <h1 class="fw-semibold" style="font-family: 'Montserrat';">Berita Utama</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card rounded-4" style="height: 70%;">
+                        <img src="img/berita3.png" class="rounded-4 card-img-top"
+                            style="object-fit: cover; height: 50%; filter: brightness(50%);" alt="...">
+
+                        <div class="w-100 px-4 d-flex justify-content-center align-items-start flex-column"
+                            style="height: 50%;">
+                            <p class="border rounded-pill d-flex justify-content-center align-items-center"
+                                style="width: 20%; color: #57cc99; border-color: #57cc99 !important;">Hot 🔥</p>
+                            <h3>Lorem ipsum dolor sit amet consectetur. </h3>
+                            <a href="detail-blog.html" type="button" style="width: 60%; background-color: #57cc99;"
+                                class="btn outline-green mt-4 d-flex justify-content-center align-items-center">Baca
+                                Sekarang<i class='bx bx-right-arrow-alt ms-2'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded-4" style="height: 70%;">
+                        <img src="img/berita2.png" class="rounded-4 card-img-top"
+                            style="object-fit: cover; height: 50%; filter: brightness(50%);" alt="...">
+
+                        <div class="w-100 px-4 d-flex justify-content-center align-items-start flex-column"
+                            style="height: 50%;">
+                            <p class="border rounded-pill d-flex justify-content-center align-items-center"
+                                style="width: 20%; color: #57cc99; border-color: #57cc99 !important;">Hot 🔥</p>
+                            <h3>Lorem ipsum dolor sit amet consectetur. </h3>
+                            <a href="detail-blog.html" type="button" style="width: 60%; background-color: #57cc99;"
+                                class="btn outline-green mt-4 d-flex justify-content-center align-items-center">Baca
+                                Sekarang<i class='bx bx-right-arrow-alt ms-2'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded-4" style="height: 70%;">
+                        <img src="img/berita1.png" class="rounded-4 card-img-top"
+                            style="object-fit: cover; height: 50%; filter: brightness(50%);" alt="...">
+
+                        <div class="w-100 px-4 d-flex justify-content-center align-items-start flex-column"
+                            style="height: 50%;">
+                            <p class="border rounded-pill d-flex justify-content-center align-items-center"
+                                style="width: 20%; color: #57cc99; border-color: #57cc99 !important;">Hot 🔥</p>
+                            <h3>Lorem ipsum dolor sit amet consectetur. </h3>
+                            <a href="detail-blog.html" type="button" style="width: 60%; background-color: #57cc99;"
+                                class="btn outline-green mt-4 d-flex justify-content-center align-items-center">Baca
+                                Sekarang<i class='bx bx-right-arrow-alt ms-2'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        class="btn position-absolute position-fixed d-flex justify-content-center align-items-center rounded-circle end-0 bottom-0 me-4 m-4"
+        style="width: 50px; height: 50px; background-color: #57cc99;">
+        <i class='bx bx-chat text-white fs-5'></i>
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Laporkan Masalah</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" placeholder="Masukkan Nama" id="name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Masukkan Email" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="laporan" class="form-label">Laporan atau Masalah</label>
+                            <textarea class="form-control" placeholder="Masukkan Laporan atau Masalah" id="laporan"
+                                rows="3"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: #57cc99; color: #FFF;">Kirim</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5 shadow" style="background-color: #f4f4f4">
+        <div class="container">
+            <div class="row">
+                <div class="col mb-4">
+                    <strong class="fs-2" style="color: #57cc99;">Dokter</strong><span class="fs-2">Mandiri</span>
+                    <p class="text-muted mt-4">
+                        <i class="bx bx-map me-2"></i>
+                        Taman Kopo Indah 3, Ruko D35Bandung
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                    <div class="contact-info mt-4">
+                        <i class="bx bxl-whatsapp contact-icon"></i>
+                        084756271823
+                    </div>
+                    <div class="contact-info">
+                        <i class="bx bx-headphone contact-icon"></i>
+                        0817283273817
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-4">Produk</h5>
+                    <a href="fitur.html" class="footer-link">Fitur</a>
+                </div>
+
+                <div class="col-md-2 mb-4 ms-0">
+                    <h5 class="mb-4">Perusahaan</h5>
+                    <a href="tentang.html" class="footer-link">Tentang Kami</a>
+                    <a href="kontak.html" class="footer-link">Kontak Kami</a>
+                    <a href="blog.html" class="footer-link">Blog</a>
+                    <a href="tnc.html" class="footer-link">Syarat & Ketentuan</a>
+                    <a href="privasi.html" class="footer-link">Kebijakan & Privasi</a>
+                    <a href="faq.html" class="footer-link">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
