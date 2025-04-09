@@ -146,6 +146,125 @@
                 padding-bottom: 0.75rem !important;
             }
         }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 90% !important;
+                height: auto !important;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .kiri {
+                width: 100% !important;
+                padding: 0 !important;
+            }
+
+            .kanan {
+                display: none !important;
+            }
+
+            #loginForm {
+                padding: 1rem !important;
+            }
+
+            #loginForm h1 {
+                font-size: 1.75rem;
+                margin-bottom: 2rem !important;
+            }
+
+            .forum {
+                width: 90% !important;
+            }
+
+            #customInput1,
+            #password,
+            .toggle-password {
+                height: 40px;
+                font-size: 0.9rem;
+            }
+
+            .floating-label {
+                font-size: 0.85rem;
+            }
+
+            .rounded-pill {
+                height: 40px !important;
+                font-size: 0.95rem;
+            }
+
+            .bx {
+                font-size: 1.5rem !important;
+                padding: 0.35rem !important;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            @media screen and (max-width: 375px) {
+                #loginForm h1 {
+                    font-size: 1.5rem;
+                }
+
+                .forum {
+                    width: 95% !important;
+                }
+
+                .bx {
+                    font-size: 1.3rem !important;
+                }
+            }
+
+            .position-relative.mb-4 {
+                margin-bottom: 1rem !important;
+            }
+
+            .input-group {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            .toggle-password {
+                position: absolute;
+                right: 0;
+                z-index: 5;
+                height: 42px;
+                width: 40px;
+                padding: 0.35rem !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .toggle-password .bx {
+                font-size: 1.2rem !important;
+                color: #6c757d;
+            }
+
+            @media screen and (max-width: 375px) {
+                #password {
+                    height: 38px;
+                }
+
+                .toggle-password {
+                    height: 38px;
+                    width: 38px;
+                }
+
+                label[for="password"].floating-label {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .warning {
+                margin-bottom: 40px;
+                width: 90%;
+                text-align: center;
+                display: block !important;
+            }
+        }
     </style>
 </head>
 
@@ -183,7 +302,7 @@
                     </li>
                 </ul>
                 <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
-                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn tmbl rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
                 <!-- <a class="nav-link ms-3" href="#">Daftar</a> -->
             </div>
@@ -191,10 +310,13 @@
     </nav>
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card rounded-4 d-flex flex-row" style="width: 80%; height: 75%; margin-top: 80px;">
-            <div class="w-75 h-100 p-5">
+            <div class="kiri w-75 h-100 p-5">
                 <form id="loginForm"
                     class="w-100 h-100 d-flex p-2 justify-content-center align-items-center flex-column">
                     <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat';">Lupa Password</h1>
+                    <p class="d-none warning">Masukkan email Anda yang telah terdaftar. Kami akan mengirimkan email
+                        untuk melakukan reset
+                        kata sandi</p>
                     <div class="mb-4 forum w-75">
                         <div class="position-relative">
                             <input id="customInput1" placeholder=" " type="text" class="ps-3 form-control">
@@ -202,11 +324,12 @@
                         </div>
                         <button onclick="window.location.href='otp.html'" type="button"
                             style="background-color: #57cc99; height: 45px;"
-                            class="w-100 fill text-white mt-3 mt-4 px-4 btn rounded-pill d-flex justify-content-center align-items-center">Lupa Password</button>
+                            class="w-100 fill text-white mt-3 mt-4 px-4 btn rounded-pill d-flex justify-content-center align-items-center">Lupa
+                            Password</button>
                     </div>
                 </form>
             </div>
-            <div class="px-5 w-50 h-100 text-white rounded-4 d-flex justify-content-center align-items-center flex-column text-center"
+            <div class="kanan px-5 w-50 h-100 text-white rounded-4 d-flex justify-content-center align-items-center flex-column text-center"
                 style="background-color: #57cc99;">
                 <h2 class="mb-4 fw-semibold" style="font-family: 'Montserrat';">Penting!</h2>
                 <p>Masukkan email Anda yang telah terdaftar. Kami akan mengirimkan email untuk melakukan reset

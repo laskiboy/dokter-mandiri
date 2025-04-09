@@ -137,6 +137,167 @@
             background-color: #57cc99 !important;
             color: #fff;
         }
+
+        /* Mobile Responsive Styling */
+
+        /* Base responsive settings */
+        @media (max-width: 768px) {
+
+            /* General container adjustments */
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            /* Search bar adjustments */
+            .d-flex.justify-content-end.align-items-end input[type="text"] {
+                width: 75% !important;
+                margin-top: 80px !important;
+                margin-right: 15px !important;
+            }
+
+            /* Main header card */
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row {
+                flex-direction: column !important;
+            }
+
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row .w-50 {
+                width: 100% !important;
+            }
+
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row .w-50.h-100.p-5 {
+                padding: 3rem 1.5rem !important;
+            }
+
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row h1 {
+                font-size: 1.5rem;
+            }
+
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row .btn {
+                width: 60% !important;
+            }
+
+            /* News section */
+            .col-md-4 {
+                margin-bottom: 20px;
+            }
+
+            /* Section headings */
+            .d-flex.mt-5.mb-4.justify-content-between.align-items-center h1,
+            .d-flex.mt-5.mb-4.justify-content-between.align-items-center.text-start h1 {
+                font-size: 1.5rem;
+            }
+
+            /* Carousel section */
+            #carouselExampleAutoplaying .d-flex {
+                flex-direction: column !important;
+            }
+
+            #carouselExampleAutoplaying .d-flex .w-50 {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            #carouselExampleAutoplaying .d-flex .w-50:first-child {
+                height: 250px !important;
+            }
+
+            #carouselExampleAutoplaying .w-50 h3 {
+                font-size: 1.25rem;
+                margin-top: 1rem;
+            }
+
+            #carouselExampleAutoplaying .btn {
+                width: 60% !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Main news cards */
+            .card.rounded-4 {
+                height: auto !important;
+                margin-bottom: 20px;
+            }
+
+            .card.rounded-4 img {
+                height: 200px !important;
+            }
+
+            .card.rounded-4 .w-100.px-4 {
+                padding: 1rem !important;
+            }
+
+            .card.rounded-4 h3 {
+                font-size: 1.2rem;
+            }
+
+            /* Chat button */
+            .btn.position-absolute.position-fixed {
+                width: 45px !important;
+                height: 45px !important;
+                margin: 0.5rem !important;
+            }
+
+            /* Modal adjustments */
+            .modal-dialog {
+                margin: 0.5rem;
+            }
+
+            .col-md-6 {
+                width: 100%;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 576px) {
+            img{
+                object-fit: cover !important;
+            }
+
+            /* Header section */
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row .w-50.h-100.p-5 {
+                padding: 2rem 1rem !important;
+            }
+
+            .card.rounded-4.d-flex.justify-content-center.align-items-center.flex-row h1 {
+                font-size: 1.25rem;
+            }
+
+            /* News cards */
+            .position-absolute.bottom-0.p-4.mb-4.text-white h1 {
+                font-size: 1.2rem;
+            }
+
+            .position-absolute.bottom-0.p-4.mb-4.text-white p {
+                font-size: 0.9rem;
+            }
+
+            /* Carousel */
+            #carouselExampleAutoplaying .d-flex .w-50:first-child {
+                height: 200px !important;
+            }
+
+            #carouselExampleAutoplaying .w-50 h3 {
+                font-size: 1.1rem;
+            }
+
+            #carouselExampleAutoplaying .w-50 p {
+                font-size: 0.9rem;
+            }
+
+            /* Main news cards */
+            .card.rounded-4 .border.rounded-pill {
+                width: 30% !important;
+                font-size: 0.8rem;
+            }
+
+            .card.rounded-4 h3 {
+                font-size: 1rem;
+            }
+
+            .card.rounded-4 .btn {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -174,7 +335,7 @@
                     </li>
                 </ul>
                 <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
-                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn tmbl rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
             </div>
         </div>

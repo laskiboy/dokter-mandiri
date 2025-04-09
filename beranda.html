@@ -106,6 +106,101 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                flex-direction: column !important;
+            }
+
+            .subhero {
+                margin-top: 100px !important;
+                width: 100% !important;
+            }
+
+            .text {
+                font-size: 2em !important;
+                width: 100% !important;
+            }
+
+            .fill-hero {
+                width: 160px !important;
+            }
+
+            .outline-hero {
+                width: 160px !important;
+                margin-right: 0 !important;
+            }
+
+            .gambar-1 {
+                width: 100% !important;
+                margin-top: -30px !important;
+            }
+
+            .second {
+                height: auto !important;
+            }
+
+            .subsecond {
+                width: 90% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+
+            .gambar-2 {
+                width: 100% !important;
+            }
+
+            .fill-second {
+                margin: 0 !important;
+            }
+
+            .feature-list-column {
+                padding: 0 !important;
+            }
+
+            .feature-item {
+                height: auto !important;
+            }
+
+            .fill-fitur {
+                max-width: none !important;
+                margin: 0 !important;
+            }
+
+            .outline-fitur {
+                max-width: none !important;
+                margin: 0 !important;
+            }
+
+            .feature-image-column {
+                display: none;
+            }
+
+            .kontak {
+                height: auto !important;
+                margin-bottom: 30px;
+            }
+
+            .subkontak {
+                flex-direction: column;
+            }
+
+            .subkontak iframe {
+                width: 90% !important;
+                margin-right: 0 !important;
+                margin-bottom: 40px;
+            }
+
+            .subkontak .width {
+                width: 90% !important;
+            }
+
+            .fill-kirim {
+                width: 90%;
+                max-width: none !important;
+            }
+
             footer {
                 padding: 20px;
             }
@@ -147,43 +242,46 @@
                     </li>
                 </ul>
                 <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
-                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn tmbl rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
                 <!-- <a class="nav-link ms-3" href="#">Daftar</a> -->
             </div>
         </div>
     </nav>
 
-    <div class="d-flex justify-content-evenly align-items-center flex-row w-100 vh-100">
-        <div class="d-flex flex-column justify-content-center align-items-center w-50">
-            <h1 class="fw-semibold text-center" style="font-family: 'Montserrat'; font-size: 3.6em;">Selamat Datang di
+    <div class="hero d-flex justify-content-evenly align-items-center flex-row w-100 vh-100">
+        <div class="subhero d-flex flex-column justify-content-center align-items-center w-50">
+            <h1 class="text fw-semibold text-center" style="font-family: 'Montserrat'; font-size: 3.6em;">
+                Selamat Datang di
                 <span style="color: #57cc99;" class="fw-bold">Dokter</span><span class="fw-medium"
                     style="font-family: 'Poppins';">Mandiri</span>
             </h1>
-            <p class="w-75 mt-4 text-center">Solusi Digital Terintegrasi untuk Klinik & Rumah Sakit, Efisiensi
+            <p class="w-75 width mt-4 text-center">Solusi Digital Terintegrasi untuk Klinik & Rumah Sakit, Efisiensi
                 Operasional dan Layanan Pasien
                 dalam Satu Platform</p>
-            <div class="d-flex mt-3">
-                <button class="fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+            <div class="d-flex mt-3 div-button">
+                <button
+                    class="fill fill-hero text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;"><i
                         class='me-3 bx bxs-rocket'></i>Coba Gratis</button>
                 <button
-                    class="outline btn btn-outline me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="outline btn outline-hero me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="border: 1px solid #22577a; width: 200px; height: 45px;"><i
                         class='me-3 bx bx-play-circle'></i>Lihat Video</button>
             </div>
         </div>
-        <img style="width: 35%;" src="img/adseto.PNG">
+        <img style="width: 35%;" class="gambar-1" src="img/adseto.PNG">
     </div>
-    <div class="d-flex mt-5 justify-content-evenly align-items-center flex-row w-100 vh-100">
-        <div class="container">
+    <div class="second d-flex mt-5 justify-content-evenly align-items-center flex-row w-100 vh-100">
+        <div class="container subsecond">
             <div class="text-center">
-                <img class="rounded-4 shadow mb-5"
+                <img class="rounded-4 shadow mb-5 gambar-2"
                     src="img/Teknologi-Kesehatan-Digital-Revolusi-dalam-Pelayanan-Medis.jpg"
                     alt="Ilustrasi sistem kesehatan" class="img-fluid">
             </div>
-            <div class="w-100 d-flex justify-content-center align-items-center flex-column">
-                <h1 class="fw-semibold text-center mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">Sistem
+            <div class="w-100 d-flex justify-content-center align-items-center flex-column subsecond">
+                <h1 class="fw-semibold text text-center mb-3" style="font-size: 3.6em; font-family: 'Montserrat';">
+                    Sistem
                     Informasi
                     Kesehatan yang Terintegrasi</h1>
                 <p class="text-center mb-4">
@@ -192,7 +290,7 @@
                     dengan satu solusi digital yang komprehensif.
                 </p>
                 <button
-                    class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="mb-5 fill fill-second text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;">Coba Sekarang<i
                         class='bx bx-right-arrow-alt ms-3'></i></button>
             </div>
@@ -200,7 +298,6 @@
     </div>
     <div class="container-fluid mt-5">
         <div class="row feature-container">
-            <!-- Bagian kiri: Daftar fitur yang bisa di-scroll -->
             <div class="col-md-6 feature-list-column">
                 <div class="d-flex justify-content-center align-items-center flex-column feature-item mb-5 px-5"
                     data-feature="feature1" id="feature1">
@@ -213,7 +310,7 @@
                         sehari-hari.</p>
                     <div class="w-100 mt-4">
                         <a href="fitur.html"
-                            class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            class="fill-fitur mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                             style="background-color: #57cc99; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
                                 class='bx bx-right-arrow-alt ms-3'></i></a>
                     </div>
@@ -232,7 +329,7 @@
                         data dan informasi penting.</p>
                     <div class="w-100 mt-4">
                         <a href="fitur.html"
-                            class="outline btn btn-outline me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            class="outline btn outline-fitur me-4 rounded-pill d-flex justify-content-center align-items-center"
                             style="border: 1px solid #22577a; width: 250px; height: 45px;">Pelajari Lebih
                             Lanjut<i class='bx bx-right-arrow-alt ms-3'></i></a>
                     </div>
@@ -251,7 +348,7 @@
                         mereka.</p>
                     <div class="w-100 mt-4">
                         <a href="fitur.html"
-                            class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            class="fill-fitur mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                             style="background-color: #57cc99; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
                                 class='bx bx-right-arrow-alt ms-3'></i></a>
                     </div>
@@ -270,7 +367,7 @@
                     </p>
                     <div class="w-100 mt-4">
                         <a href="fitur.html"
-                            class="outline btn btn-outline me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            class="fill-fitur outline btn outline-fitur me-4 rounded-pill d-flex justify-content-center align-items-center"
                             style="border: 1px solid #22577a; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
                                 class='bx bx-right-arrow-alt ms-3'></i></a>
                     </div>
@@ -289,7 +386,7 @@
                         pengguna kami.</p>
                     <div class="w-100 mt-4">
                         <a href="fitur.html"
-                            class="mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                            class="fill-fitur mb-5 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                             style="background-color: #57cc99; width: 250px; height: 45px;">Pelajari Lebih Lanjut<i
                                 class='bx bx-right-arrow-alt ms-3'></i></a>
                     </div>
@@ -309,15 +406,15 @@
         </div>
     </div>
 
-    <div class="container d-flex flex-column justify-content-center align-items-center w-100 vh-100">
+    <div class="kontak container d-flex flex-column justify-content-center align-items-center w-100 vh-100">
         <h1 class="fw-semibold" style="font-family: 'Montserrat';">Kontak Kami</h1>
         <p>Hubungi kami jika blabla</p>
-        <div class="d-flex justify-content-center align-items-center w-100 mt-5">
+        <div class="d-flex subkontak justify-content-center align-items-center w-100 mt-5">
             <iframe class="w-50 me-5"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3934360938374!2d107.5553798!3d-6.9628289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ef236eb19e97%3A0x93da0f0cfa5d199c!2sGoldstep%20Indonesia!5e0!3m2!1sid!2sid!4v1742808523848!5m2!1sid!2sid"
                 height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="w-75">
+            <div class="w-75 width">
                 <form class="row g-3">
                     <div class="col-md-6">
                         <input type="text" placeholder="Nama" class="form-control" id="inputEmail4">
@@ -336,7 +433,7 @@
                     <div class="col-12">
                         <button type="button" onclick="window.location.href='buat-pw.html'"
                             style="background-color: #57cc99; height: 45px;"
-                            class="w-100 fill text-white btn rounded-pill d-flex justify-content-center align-items-center">
+                            class="fill-kirim w-100 fill text-white btn rounded-pill d-flex justify-content-center align-items-center">
                             Kirim
                         </button>
                     </div>

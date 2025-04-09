@@ -50,6 +50,47 @@
         }
 
         @media (max-width: 768px) {
+            .subhero {
+                height: auto !important;
+                width: 100% !important;
+                flex-direction: column !important;
+            }
+
+            .sub-subhero {
+                margin-top: 100px;
+                padding-left: 30px !important;
+                width: 90% !important;
+                margin-left: 0 !important;
+            }
+
+            .text {
+                font-size: 2em !important;
+                width: 100% !important;
+            }
+
+            .gambar-1 {
+                display: none !important;
+            }
+
+            .gambar-2 {
+                margin-left: 20px;
+                display: block !important;
+                object-fit: cover;
+            }
+
+            .paket {
+                width: 100% !important;
+            }
+
+            .subpaket {
+                flex-direction: column;
+            }
+
+            .w-25{
+                width: 90% !important;
+                margin-bottom: 50px;
+            }
+
             footer {
                 padding: 20px;
             }
@@ -91,27 +132,32 @@
                     </li>
                 </ul>
                 <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
-                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn tmbl rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
             </div>
         </div>
     </nav>
-    <div class="vh-100 d-flex justify-content-center align-items-start flex-column mt-4">
-        <div style="width: 40%; margin-left: 200px;">
-            <h1 class="fw-semibold mb-4 w-100 text-start" style="font-family: 'Montserrat'; font-size: 3.5em;">Coba 2
+    <div class="subhero vh-100 d-flex justify-content-center align-items-start flex-column mt-4">
+        <div class="sub-subhero" style="width: 40%; margin-left: 200px;">
+            <h1 class="text fw-semibold mb-4 w-100 text-start" style="font-family: 'Montserrat'; font-size: 3.5em;">Coba
+                2
                 bulan Premium seharga
                 Rp 499.990</h1>
             <p>Hanya Rp 54.990/bulan sesudahnya. Batalkan kapan saja</p>
         </div>
-        <div class="position-absolute" style="width: 40%; right: 0; margin-right: -20px;">
+        <div class="position-absolute gambar-1" style="width: 40%; right: 0; margin-right: -20px;">
+            <img class="w-100 h-100" src="img/asdadadadsdas.png" alt="">
+        </div>
+        <div class="w-100 d-none gambar-2">
             <img class="w-100 h-100" src="img/asdadadadsdas.png" alt="">
         </div>
     </div>
-    <div class="d-flex justify-content-evenly align-items-center flex-column mb-5">
-        <h1 class="fw-semibold mb-3 text-center w-100 text-start" style="font-family: 'Montserrat'; font-size: 3.5em;">
+    <div class="paket d-flex justify-content-evenly align-items-center flex-column mb-5">
+        <h1 class="fw-semibold text mb-3 text-center w-100 text-start"
+            style="font-family: 'Montserrat'; font-size: 3.5em;">
             Pilih Paket</h1>
         <p class="mb-5">Dengan dukungan operasional menyeluruh untuk memberikan pelayanan optimal kepada pasien</p>
-        <div class="container d-flex justify-content-evenly align-items-center w-100">
+        <div class="subpaket container d-flex justify-content-evenly align-items-center w-100">
             <div
                 class="w-25 bg-light rounded-4 px-4 py-4 d-flex shadow justify-content-center align-items-start flex-column">
                 <p class="fs-3 fw-semibold" style="font-family: 'Montserrat'; color: #57cc99;">Basic</p>
@@ -214,7 +260,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="laporan" class="form-label">Laporan atau Masalah</label>
-                            <textarea class="form-control" placeholder="Masukkan Laporan atau Masalah" id="laporan" rows="3"></textarea>
+                            <textarea class="form-control" placeholder="Masukkan Laporan atau Masalah" id="laporan"
+                                rows="3"></textarea>
                         </div>
                 </div>
                 <div class="modal-footer">

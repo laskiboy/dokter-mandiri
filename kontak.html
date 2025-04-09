@@ -50,6 +50,30 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding-top: 100px;
+                padding-bottom: 100px;
+                flex-direction: column;
+                height: auto !important;
+            }
+
+            .w-50 {
+                width: 90% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .w-90 {
+                width: 90% !important;
+                margin: 0 !important;
+            }
+
+            .text {
+                margin-top: 50px;
+                font-size: 2em !important;
+                width: 100% !important;
+            }
+
             footer {
                 padding: 20px;
             }
@@ -91,13 +115,13 @@
                     </li>
                 </ul>
                 <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
-                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn tmbl rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
             </div>
         </div>
     </nav>
 
-    <div class="d-flex justify-content-center align-items-center w-100 vh-100" style="margin-top: 40px;">
+    <div class="hero d-flex justify-content-center align-items-center w-100 vh-100" style="margin-top: 40px;">
         <div class="w-50 px-5">
             <div class="card rounded-4 shadow p-5">
                 <h1 class="fw-semibold mb-3" style="font-family: 'Montserrat';">Mari Berbincang</h1>
@@ -127,8 +151,8 @@
                 </form>
             </div>
         </div>
-        <div class="d-flex flex-column ms-5" style="width: 40%;">
-            <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Kontak Kami</h1>
+        <div class="w-90 d-flex flex-column ms-5" style="width: 40%;">
+            <h1 class="fw-semibold text mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Kontak Kami</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum itaque labore quis eos voluptates totam
                 porro. Perferendis eveniet ad nesciunt, doloribus deserunt minus. Atque, ipsum. Officiis voluptatem
                 fugit veniam modi.</p>

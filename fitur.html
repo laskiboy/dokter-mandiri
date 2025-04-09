@@ -106,6 +106,85 @@
         }
 
         @media (max-width: 768px) {
+            .subhero {
+                width: 90% !important;
+                flex-direction: column !important;
+            }
+
+            .sub-subhero {
+                margin-top: 100px;
+                width: 90% !important;
+                margin-left: 0 !important;
+            }
+
+            .text {
+                font-size: 2em !important;
+                width: 100% !important;
+            }
+
+            .gambar-1 {
+                display: none !important;
+            }
+
+            .gambar-2 {
+                margin-left: 20px;
+                display: block !important;
+                object-fit: cover;
+            }
+
+            .second {
+                flex-direction: column;
+            }
+
+            .gambar-3 {
+                width: 90% !important;
+            }
+
+            .card-body {
+                align-items: center !important;
+            }
+
+            .card-body h4 {
+                text-align: center !important;
+            }
+
+            .images {
+                width: 100% !important;
+                /* height: 90% !important; */
+                /* display: none !important; */
+            }
+
+            .div-ket {
+                width: 90% !important;
+            }
+
+            .fill-detail {
+                margin: 0 !important;
+            }
+
+            .p-detail {
+                margin-bottom: 50px;
+            }
+
+            #detail-1,
+            #detail-2,
+            #detail-4,
+            #detail-5 {
+                flex-direction: column;
+            }
+
+            .img-2-1 {
+                display: none !important;
+            }
+
+            .img-2-2 {
+                display: block !important;
+            }
+
+            .img-3-2 {
+                display: none;
+            }
+
             footer {
                 padding: 20px;
             }
@@ -147,7 +226,7 @@
                     </li>
                 </ul>
                 <button style="background-color: #57cc99;" onclick="window.location.href='login.html'"
-                    class="fill text-white mt-3 mt-lg-0 px-4 btn rounded-pill d-flex justify-content-center align-items-center"><i
+                    class="fill text-white mt-3 mt-lg-0 px-4 btn tmbl rounded-pill d-flex justify-content-center align-items-center"><i
                         class='me-3 bx bxs-door-open'></i>Masuk</button>
             </div>
         </div>
@@ -160,26 +239,31 @@
     </style>
     <div class="d-flex w-100 hero" style="height: 95vh;">
         <img class="w-100 h-100 rounded-4 position-fixed" src="img/blob-scene-haikei.png" alt="">
-        <div class="mt-4 d-flex justify-content-start align-items-center" style="height: 90vh; z-index: 1;">
-            <div style="width: 40%; margin-left: 200px;">
-                <h1 class="fw-semibold mb-4" style="font-family: 'Montserrat'; font-size: 3.5em;">Lorem ipsum dolor sit
+        <div class="mt-4 subhero d-flex justify-content-start align-items-center" style="height: 90vh; z-index: 1;">
+            <div class="sub-subhero" style="width: 40%; margin-left: 200px;">
+                <h1 class="text fw-semibold mb-4" style="font-family: 'Montserrat'; font-size: 3.5em;">Lorem ipsum dolor
+                    sit
                     amet
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimus quidem perspiciatis rem
+                <p class="p-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimus quidem
+                    perspiciatis rem
                     labore soluta maxime, autem magni nam iusto necessitatibus voluptate nobis quod, voluptatem deserunt
                     libero explicabo reiciendis alias!</p>
             </div>
-            <div class="position-absolute" style="width: 40%; right: 0; margin-right: -20px;">
+            <div class="position-absolute gambar-1" style="width: 40%; right: 0; margin-right: -20px;">
+                <img class="w-100 h-100" src="img/asdadadadsdas.png" alt="">
+            </div>
+            <div class="w-100 d-none gambar-2">
                 <img class="w-100 h-100" src="img/asdadadadsdas.png" alt="">
             </div>
         </div>
     </div>
-    <div class="my-5 d-flex justify-content-evenly align-items-center">
-        <div class="my-5" style="width: 40%;">
+    <div class="second my-5 d-flex justify-content-evenly align-items-center">
+        <div class="my-5 gambar-3" style="width: 40%;">
             <img class="w-100 h-100 rounded-4 shadow" src="img/10-tips-kepala-sering-pusing-agar-tidak-kambuh-lagi.jpg"
                 alt="">
         </div>
-        <div style="width: 40%;" class="d-flex flex-column">
+        <div style="width: 40%;" class="gambar-3 d-flex flex-column">
             <h1 class="mb-4 fw-semibold" style="font-family: 'Montserrat';">Masalah yang Sering Terjadi di Klinik &
                 Rumah Sakit</h1>
             <p>Di banyak fasilitas kesehatan, proses pendaftaran masih dilakukan secara manual dan seringkali
@@ -313,14 +397,16 @@
             }
         </style>
         <div id="detail-1" class="p-4 mb-5 w-100 d-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-center align-items-center flex-column w-50 text-center">
-                <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan 1
+            <div class="div-ket d-flex justify-content-center align-items-center flex-column w-50 text-center">
+                <h1 class="text fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan
+                    1
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet repudiandae? Sint
+                <p class="p-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet
+                    repudiandae? Sint
                     minus
                     fuga, ullam facilis in reiciendis.</p>
                 <a href="fitur.html"
-                    class="mt-3 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="mt-3 fill fill-detail text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;"><i
                         class='me-3 bx bx-play-circle fs-4'></i>Lihat Tutorial</a>
             </div>
@@ -330,64 +416,78 @@
     </div>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div id="detail-2" class="p-4 mb-5 w-100 d-flex justify-content-between align-items-center">
-            <img src="img/vitur2.png" class="images mt-5 rounded-4" width="500" height="500" style="object-fit: cover;"
-                alt="">
-            <div class="d-flex justify-content-center align-items-center flex-column w-50 text-center">
-                <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan 2
+            <img src="img/vitur2.png" class="images img-2-1 mt-5 rounded-4" width="500" height="500"
+                style="object-fit: cover;" alt="">
+            <div class="div-ket d-flex justify-content-center align-items-center flex-column w-50 text-center">
+                <h1 class="text fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan
+                    2
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet repudiandae? Sint
+                <p class="p-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet
+                    repudiandae? Sint
                     minus
                     fuga, ullam facilis in reiciendis.</p>
                 <a href="fitur.html"
-                    class="mt-3 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="mt-3 fill fill-detail text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;"><i
                         class='me-3 bx bx-play-circle fs-4'></i>Lihat Tutorial</a>
             </div>
+            <img src="img/vitur2.png" class="images d-none img-2-2 mt-5 rounded-4" width="500" height="500"
+                style="object-fit: cover;" alt="">
         </div>
     </div>
     <div class="container w-100 mt-5 vh-100 d-flex justify-content-center align-items-center">
         <div id="detail-3" class="p-4 mb-5 w-100 d-flex justify-content-center   align-items-center">
-            <div class="d-flex justify-content-center align-items-center flex-column w-50 text-center">
-                <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan 3
+            <div class="div-ket d-flex justify-content-center align-items-center flex-column w-50 text-center">
+                <h1 class="text fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan
+                    3
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet repudiandae? Sint
+                <p class="p-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet
+                    repudiandae? Sint
                     minus
                     fuga, ullam facilis in reiciendis.</p>
                 <a href="fitur.html"
-                    class="mt-3 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="mt-3 fill fill-detail text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;"><i
                         class='me-3 bx bx-play-circle fs-4'></i>Lihat Tutorial</a>
-                <img src="img/vitur3.png" class="images mt-5 rounded-4 shadow" width="800" alt="">
+                <img src="img/vitur3.png" class="images d-none img-2-2 mt-5 rounded-4" width="500" height="500"
+                    style="object-fit: cover;" alt="">
+                <img src="img/vitur3.png" class="images img-3-2 mt-5 rounded-4 shadow" width="800" alt="">
             </div>
         </div>
     </div>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div id="detail-4" class="p-4 mb-5 w-100 d-flex justify-content-between align-items-center">
-            <img src="img/vitur4.png" class="images mt-5 rounded-4" width="500" height="500" style="object-fit: cover;"
+            <img src="img/vitur4.png" class="images img-2-1 mt-5 rounded-4" width="500" height="500" style="object-fit: cover;"
                 alt="">
-            <div class="d-flex justify-content-center align-items-center flex-column w-50 text-center">
-                <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan 4
+            <div class="div-ket d-flex justify-content-center align-items-center flex-column w-50 text-center">
+                <h1 class="text fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan
+                    4
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet repudiandae? Sint
+                <p class="p-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet
+                    repudiandae? Sint
                     minus
                     fuga, ullam facilis in reiciendis.</p>
                 <a href="fitur.html"
-                    class="mt-3 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="mt-3 fill fill-detail text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;"><i
                         class='me-3 bx bx-play-circle fs-4'></i>Lihat Tutorial</a>
+                <img src="img/vitur4.png" class="images d-none img-2-2 mt-5 rounded-4" width="500" height="500"
+                    style="object-fit: cover;" alt="">
             </div>
         </div>
     </div>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div id="detail-5" class="p-4 mb-5 w-100 d-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-center align-items-center flex-column w-50 text-center">
-                <h1 class="fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan 5
+            <div class="div-ket d-flex justify-content-center align-items-center flex-column w-50 text-center">
+                <h1 class="text fw-semibold mb-5" style="font-family: 'Montserrat'; font-size: 3.5em;">Detail Keunggulan
+                    5
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet repudiandae? Sint
+                <p class="p-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero earum eveniet
+                    repudiandae? Sint
                     minus
                     fuga, ullam facilis in reiciendis.</p>
                 <a href="fitur.html"
-                    class="mt-3 fill text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
+                    class="mt-3 fill fill-detail text-white btn me-4 rounded-pill d-flex justify-content-center align-items-center"
                     style="background-color: #57cc99; width: 200px; height: 45px;"><i
                         class='me-3 bx bx-play-circle fs-4'></i>Lihat Tutorial</a>
             </div>
